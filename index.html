@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Labyrinth</title>
+  </head>
+  <body>
+  <audio src="https://ia800504.us.archive.org/15/items/SuperMarioBros.ThemeMusic/SuperMarioBros.ogg" loop autoplay></audio>
+    <div class="mainContainer">
+      <!-- <div><img src="logo.png" alt="logo"></div> -->
+      <div class="container1">
+
+      <a href="#start"><p onClick="chrono.Start(20);" class="button">Play</p></a>
+      </div>
+    </div>
+
+
+    <br/>
+    <em id="time">20</em>
+
+  <section="map">
+
+    <div class="container">
+      <div class="victory"><p>Bravo ! tu as le droit de recommencer.</p></div>
+
+    <table class="table">
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave "></td>
+        <td class="colonne flower border-left"></td>
+        <td class="colonne flower rip"><img class="flag"src="img/flag.png" alt="aafdazfd"></td>
+        <td class="colonne flower border-right"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne black"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne black"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne black"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+      <tr>
+        <!-- out -->
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne flower"></td>
+        <td class="colonne wave"></td>
+        <td class="colonne  wave"></td>
+        <td class="colonne  wave"></td>
+      </tr>
+
+    <tr>
+      <!-- ligne 1 -->
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 2 -->
+      <td class="colonne flower"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 3 -->
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 3 -->
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 4 -->
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 5 -->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 6 -->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+    </tr>
+
+    <tr id="start">
+      <!-- ligne 7 -->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne  black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 8 -->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 9-->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 10-->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 11-->
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+    </tr>
+
+    <tr>
+      <!-- ligne 12-->
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne  flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne black"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+      <td class="colonne flower"></td>
+    </tr>
+    </table>
+  </section>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
