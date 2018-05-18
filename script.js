@@ -3,7 +3,6 @@ var starting = document.querySelector('.container1');
 
 
 starting.addEventListener('click', function() {
-  console.log('bonjour');
   changer.style.display = "none";
 });
 
@@ -33,21 +32,18 @@ var chrono = {
     //Et on appelle la fonction qui gère la fin du temps imparti et poursuit le traitement
     //Ici, pour le test, simplement une fonction alert
     alert('Vous avez perdu');
-
   }
 
 };
 
 var x = 6;
 var y = 14;
-var victoire = document.querySelector('.victory')
+var victoire = document.querySelector('.victory');
 var table = document.querySelectorAll('tr');
-
 var colone = document.querySelector('.flower');
 
 var actuel = table[y].children[x];
 actuel.classList.add('bonjour');
-
 console.log(table[y].children[x - 1].classList.contains('test'));
 window.addEventListener('keydown', function(event) {
   event.preventDefault();
@@ -97,6 +93,12 @@ window.addEventListener('keydown', function(event) {
       victoire.style.display = 'inline';
     }
   }
+
+  if (bot !== null && pageYOffset != actuel.offsetTop) {
+    console.log('posé');
+    window.scrollTo(0,actuel.offsetTop-400);
+  }
+
 });
 /*window.pageYOffset
 2816
