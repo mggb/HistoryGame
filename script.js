@@ -225,6 +225,7 @@ window.addEventListener('keydown', function(event) {
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte1");
+            audio.pause();
           }
           if (max === 1) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
@@ -232,13 +233,16 @@ window.addEventListener('keydown', function(event) {
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte2");
+            audio.pause();
           }
+
           if (max === 2) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
             changer.innerHTML = ' ';
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte3");
+            audio.pause();
           }
           if (max === 3) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
@@ -246,6 +250,7 @@ window.addEventListener('keydown', function(event) {
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte4");
+            audio.pause();
           }
           if (max === 4) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
@@ -253,6 +258,7 @@ window.addEventListener('keydown', function(event) {
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte5");
+            audio.pause();
           }
           if (max === 5) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
@@ -260,6 +266,7 @@ window.addEventListener('keydown', function(event) {
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte6");
+            audio.pause();
           }
         }
       }
