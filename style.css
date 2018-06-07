@@ -2,34 +2,40 @@
   display: flex;
   justify-content: center;
   margin: 100px;
-  position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
-  background: white;
-  opacity:.8;
+  background-image: url(opening.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  display: none;
 }
-.button
-{
-  width:250px;
-  height:50px;
-  color:black;
-  background:red;
-  cursor:pointer;
-  text-align:center;
-  margin:150px;
-  line-height:50px;
-  font-size:25px;
+
+.button {
+  width: 250px;
+  height: 50px;
+  color: black;
+  background: red;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 35%;
+margin-left: 25%;
+  line-height: 50px;
+  font-size: 25px;
 }
+
 .sousContainer {
   position: absolute;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 .ContentItem {
   position: relative;
   text-decoration: none;
@@ -37,72 +43,226 @@ a{
   color: #000;
 }
 
-
 button {
-        position: absolute;
-        margin-left: 95%;
-      }
-      #time {
-        position: absolute;
-        margin-left: 95%;
-        color: white;
-        font-size: 3em;
-        position: fixed;
-        z-index: 3;
-      }
-      .container{
- position:relative;
-
+  position: absolute;
+  margin-left: 95%;
 }
-.victory
-{
-  position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:white;
-  opacity:1;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:60px;
+
+#time {
+  position: absolute;
+  margin-left: 95%;
+  color: white;
+  font-size: 3em;
+  position: fixed;
+  z-index: 3;
+}
+
+.container {
+  position: relative;
+}
+
+.victory {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
   z-index: ;
   display: none;
 }
-@keyframes wave
-{
-  to{background:url(img/wave1.png);}from{background:url(img/wave2.png);}
+
+.flower {
+  background: url(img/flower.png);
 }
 
-.wave{animation:wave 1.4s infinite;}
-.flower{background:url(img/flower.png);}
-
-.mur-img{width:100% ;}
-.black{background:url('img/caillouptit.jpg') repeat ;}
-.mur{border-top:1px solid black;}
-
-.table{width:100%;height:10vh;animation:wave 1.5s ease infinite;}
-.colonne
-{
-  width:8.33%;
-  height:200px;
-
+.mur-img {
+  width: 100%;
 }
-.border-left
-{
+
+.black {
+  background: url('img/caillouptit.jpg') repeat;
+}
+
+.point {
+  background: url('img/point.jpg') no-repeat;
+}
+
+.mur {
+  border-top: 1px solid black;
+}
+
+.table {
+  width: 100%;
+  height: 10vh;
+  animation: wave 1.5s ease infinite;
+}
+
+.colonne {
+  height: 100px;
+}
+
+.border-left {
   border-radius: 100px 0 0 0;
 }
-.border-right
-{
+
+.border-right {
   border-radius: 0 100px 0 0;
 }
-.bonjour{
-    background: url(https://media.discordapp.net/attachments/388871813905514507/388871880817246209/Mario.gif?width=234&height=468);
-    width: 50px;
-    left: 119px;
-    top: 119px;
-  }
-  .flag{
-    width:100%;
-  }
+
+.bonjour {
+  background: url(https://media.discordapp.net/attachments/388871813905514507/388871880817246209/Mario.gif?width=234&height=468);
+  left: 119px;
+  top: 119px;
+}
+
+.flag {
+  width: 100%;
+}
+
+.section {
+  position: fixed;
+  top: 591px;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+}
+
+.container {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+}
+
+.question {
+  height: 10vh;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 10px
+}
+
+.containerAwswer {
+  height: 20vh;
+  width: 80%;
+  display: flex;
+}
+
+.awswer {
+  height: 6vh;
+  width: 85%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: blue;
+}
+
+.ul {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.textinanswer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carte1 {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(carte1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.carte2 {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(carte2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.carte3 {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(carte3.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+}
+
+.carte4 {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(carte4.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+}
+
+.carte5 {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(carte5.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+}
+
+.carte6 {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(carte6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.yolo{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: blue;
+}
+.textinyolo{
+  color: white;
+  font-size: 60px;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 20%;
+}
