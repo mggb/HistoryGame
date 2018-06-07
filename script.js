@@ -82,6 +82,7 @@ function recupRep() {
   }
   return wesh
 }
+
 function finish() {
 
 }
@@ -218,42 +219,42 @@ window.addEventListener('keydown', function(event) {
           max = i;
           if (max === 0) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
-            changer.innerHTML=' ';
+            changer.innerHTML = ' ';
             changer.style.display = "block";
-              changer.classList.remove("mainContainer");
+            changer.classList.remove("mainContainer");
             changer.classList.add("carte1");
           }
           if (max === 1) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
-            changer.innerHTML=' ';
+            changer.innerHTML = ' ';
             changer.style.display = "block";
-              changer.classList.remove("mainContainer");
+            changer.classList.remove("mainContainer");
             changer.classList.add("carte2");
           }
           if (max === 2) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
-            changer.innerHTML=' ';
+            changer.innerHTML = ' ';
             changer.style.display = "block";
-              changer.classList.remove("mainContainer");
+            changer.classList.remove("mainContainer");
             changer.classList.add("carte3");
           }
           if (max === 3) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
-            changer.innerHTML=' ';
+            changer.innerHTML = ' ';
             changer.style.display = "block";
-              changer.classList.remove("mainContainer");
+            changer.classList.remove("mainContainer");
             changer.classList.add("carte4");
           }
           if (max === 4) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
-            changer.innerHTML=' ';
+            changer.innerHTML = ' ';
             changer.style.display = "block";
-              changer.classList.remove("mainContainer");
+            changer.classList.remove("mainContainer");
             changer.classList.add("carte5");
           }
           if (max === 5) {
             console.log('mon projet est finiiiiiiiiiiiiiiiiiiii');
-            changer.innerHTML=' ';
+            changer.innerHTML = ' ';
             changer.style.display = "block";
             changer.classList.remove("mainContainer");
             changer.classList.add("carte6");
@@ -273,6 +274,7 @@ window.addEventListener('keydown', function(event) {
     for (var i = 0; i < finish.length; i++) {
       finish[i].classList.remove("black")
       finish[i].classList.add("flower")
+      finish[3].classList.remove("flo")
       finish[3].classList.add("flo")
     }
   }

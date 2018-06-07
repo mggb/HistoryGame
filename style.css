@@ -122,7 +122,10 @@ button {
 }
 
 .flag {
-  width: 100%;
+width: 100%;
+}
+.flo{
+  background: url(flo.jpg);
 }
 
 .section {
