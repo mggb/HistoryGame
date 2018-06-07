@@ -3,6 +3,7 @@ var opening = document.querySelector('.yolo');
 var starting = document.querySelector('.container1');
 var pi = document.querySelector('.section');
 var finish = document.querySelectorAll('.finish');
+var audio = document.querySelector('.audio');
 var answers = ["reponse1", "reponse2", "reponse3", "reponse4", "reponse5", "reponse6"];
 var wesh = [];
 
@@ -15,6 +16,7 @@ opening.addEventListener('click', function() {
 });
 starting.addEventListener('click', function() {
   changer.style.display = "none";
+  audio.play();
 });
 
 function construction(i) {
